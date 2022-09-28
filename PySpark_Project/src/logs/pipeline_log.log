@@ -1,0 +1,102 @@
+"03-Aug-22 23:06:12" - root - INFO - Pipeline has started
+"03-Aug-22 23:06:12" - create_objects - INFO - Using master as local
+"03-Aug-22 23:06:32" - create_objects - INFO - Spark Object created successfully
+"03-Aug-22 23:06:41" - validations - INFO - Current Date -> [Row(current_date()=datetime.date(2022, 8, 3))]
+"03-Aug-22 23:06:41" - root - INFO - Spark Object is validated!
+"03-Aug-22 23:06:41" - data_ingest - INFO - Loading C:\Users\suraj\AnalyticsProject\src\main\python\bin\..\staging\dimension_city\us_cities_dimension.parquet
+"03-Aug-22 23:06:42" - data_ingest - INFO - File has been loaded
+"03-Aug-22 23:06:42" - data_ingest - INFO - Loading C:\Users\suraj\AnalyticsProject\src\main\python\bin\..\staging\fact\USA_Presc_Medicare_Data_2021.csv
+"03-Aug-22 23:06:45" - data_ingest - INFO - File has been loaded
+"03-Aug-22 23:06:46" - validations - INFO - Df df_city has 28338 rows
+"03-Aug-22 23:06:46" - validations - INFO - DF df_city validated successful
+"03-Aug-22 23:06:47" - validations - INFO - Df df_fact has 100000 rows
+"03-Aug-22 23:06:47" - validations - INFO - DF df_fact validated successful
+"03-Aug-22 23:06:47" - data_pre - INFO - Data preprocessing for df_city started!
+"03-Aug-22 23:06:47" - data_pre - INFO - Data preprocessing for df_city completed!
+"03-Aug-22 23:06:47" - validations - INFO - Df df_city has 28338 rows
+"03-Aug-22 23:06:47" - validations - INFO - DF df_city validated successful
+"03-Aug-22 23:06:47" - data_pre - INFO - Data preprocessing for df_fact started!
+"03-Aug-22 23:06:47" - data_pre - INFO - Data preprocessing for df_fact completed!
+"03-Aug-22 23:06:48" - validations - INFO - Df df_fact has 100000 rows
+"03-Aug-22 23:06:48" - validations - INFO - DF df_fact validated successful
+"03-Aug-22 23:06:48" - validations - INFO - Validating DF df_fact schema
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('presc_id', IntegerType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('total_drug_cost', DoubleType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('total_day_supply', IntegerType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('drug_name', StringType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('trx_count', IntegerType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('years_of_exp', IntegerType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('presc_spclt', StringType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('presc_state', StringType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('presc_city', StringType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('country_name', StringType(), False)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('presc_fullname', StringType(), False)
+"03-Aug-22 23:06:48" - validations - INFO - DF df_fact schema validated successful
+"03-Aug-22 23:06:48" - validations - INFO - Validating DF df_city schema
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('city', StringType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('state_id', StringType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('state_name', StringType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('county_name', StringType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('population', IntegerType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - 	StructField('zips', StringType(), True)
+"03-Aug-22 23:06:48" - validations - INFO - DF df_city schema validated successful
+"03-Aug-22 23:06:48" - data_transform - INFO - Transform - city_report Started
+"03-Aug-22 23:06:48" - data_transform - INFO - Transform - city_report Completed
+"03-Aug-22 23:06:51" - validations - INFO - Df df_city_final has 7804 rows
+"03-Aug-22 23:06:51" - validations - INFO - DF df_city_final validated successful
+"03-Aug-22 23:06:51" - data_transform - INFO - Transform - presc_report Started
+"03-Aug-22 23:06:52" - data_transform - INFO - Transform - presc_report Completed
+"03-Aug-22 23:06:52" - validations - INFO - Df df_presc_final has 82025 rows
+"03-Aug-22 23:06:52" - validations - INFO - DF df_presc_final validated successful
+"03-Aug-22 23:06:52" - root - INFO - Pipeline completed
+"03-Aug-22 23:32:19" - root - INFO - Pipeline has started
+"03-Aug-22 23:32:19" - create_objects - INFO - Using master as local
+"03-Aug-22 23:32:28" - create_objects - INFO - Spark Object created successfully
+"03-Aug-22 23:32:32" - validations - INFO - Current Date -> [Row(current_date()=datetime.date(2022, 8, 3))]
+"03-Aug-22 23:32:32" - root - INFO - Spark Object is validated!
+"03-Aug-22 23:32:32" - data_ingest - INFO - Loading C:\Users\suraj\AnalyticsProject\src\main\bin\..\staging\dimension_city\us_cities_dimension.parquet
+"03-Aug-22 23:32:33" - data_ingest - INFO - File has been loaded
+"03-Aug-22 23:32:33" - data_ingest - INFO - Loading C:\Users\suraj\AnalyticsProject\src\main\bin\..\staging\fact\USA_Presc_Medicare_Data_2021.csv
+"03-Aug-22 23:32:35" - data_ingest - INFO - File has been loaded
+"03-Aug-22 23:32:35" - validations - INFO - Df df_city has 28338 rows
+"03-Aug-22 23:32:35" - validations - INFO - DF df_city validated successful
+"03-Aug-22 23:32:36" - validations - INFO - Df df_fact has 100000 rows
+"03-Aug-22 23:32:36" - validations - INFO - DF df_fact validated successful
+"03-Aug-22 23:32:36" - data_pre - INFO - Data preprocessing for df_city started!
+"03-Aug-22 23:32:36" - data_pre - INFO - Data preprocessing for df_city completed!
+"03-Aug-22 23:32:36" - validations - INFO - Df df_city has 28338 rows
+"03-Aug-22 23:32:36" - validations - INFO - DF df_city validated successful
+"03-Aug-22 23:32:36" - data_pre - INFO - Data preprocessing for df_fact started!
+"03-Aug-22 23:32:36" - data_pre - INFO - Data preprocessing for df_fact completed!
+"03-Aug-22 23:32:36" - validations - INFO - Df df_fact has 100000 rows
+"03-Aug-22 23:32:36" - validations - INFO - DF df_fact validated successful
+"03-Aug-22 23:32:36" - validations - INFO - Validating DF df_fact schema
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('presc_id', IntegerType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('total_drug_cost', DoubleType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('total_day_supply', IntegerType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('drug_name', StringType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('trx_count', IntegerType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('years_of_exp', IntegerType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('presc_spclt', StringType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('presc_state', StringType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('presc_city', StringType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('country_name', StringType(), False)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('presc_fullname', StringType(), False)
+"03-Aug-22 23:32:36" - validations - INFO - DF df_fact schema validated successful
+"03-Aug-22 23:32:36" - validations - INFO - Validating DF df_city schema
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('city', StringType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('state_id', StringType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('state_name', StringType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('county_name', StringType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('population', IntegerType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - 	StructField('zips', StringType(), True)
+"03-Aug-22 23:32:36" - validations - INFO - DF df_city schema validated successful
+"03-Aug-22 23:32:36" - data_transform - INFO - Transform - city_report Started
+"03-Aug-22 23:32:36" - data_transform - INFO - Transform - city_report Completed
+"03-Aug-22 23:32:38" - validations - INFO - Df df_city_final has 7804 rows
+"03-Aug-22 23:32:38" - validations - INFO - DF df_city_final validated successful
+"03-Aug-22 23:32:38" - data_transform - INFO - Transform - presc_report Started
+"03-Aug-22 23:32:39" - data_transform - INFO - Transform - presc_report Completed
+"03-Aug-22 23:32:39" - validations - INFO - Df df_presc_final has 82025 rows
+"03-Aug-22 23:32:39" - validations - INFO - DF df_presc_final validated successful
+"03-Aug-22 23:32:39" - root - INFO - Pipeline completed
