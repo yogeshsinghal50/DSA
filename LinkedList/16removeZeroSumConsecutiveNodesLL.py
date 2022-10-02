@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/
+
 def removeZeroSumSublists(self, head: Optional[ListNode]) -> Optional[ListNode]:
     prefix_sum = 0
     dict_map = {}

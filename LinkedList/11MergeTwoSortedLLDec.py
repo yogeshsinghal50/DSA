@@ -1,3 +1,5 @@
+# https://www.techiedelight.com/merge-two-sorted-linked-lists-end/
+
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data

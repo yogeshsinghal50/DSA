@@ -1,3 +1,5 @@
+# https://www.techiedelight.com/determine-linked-list-palindrome-or-not/
+
 class Node:
     def __init__(self, ch):
         self.data = ch

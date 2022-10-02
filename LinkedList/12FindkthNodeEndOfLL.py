@@ -1,3 +1,5 @@
+# https://www.techiedelight.com/find-kth-node-from-the-end-linked-list
+
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data
@@ -26,6 +28,18 @@ def getKthFromEnd(head, k):
         firstP = firstP.next
     return secondP
 
+def findKthNode(node, k):
+ 
+    # base case
+    if node is None:
+        return 0
+ 
+    count = findKthNode(node.next, k) + 1
+ 
+    if count == k:
+        print('k\'th node from the end is', node.data)
+ 
+    return count
 
 if __name__ == '__main__':
 

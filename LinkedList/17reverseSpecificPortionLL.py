@@ -1,8 +1,10 @@
+
+# https://www.techiedelight.com/reverse-specified-portion-linked-list/
+
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data
         self.next = next
-
 
 # Utility function to print a linked list
 def printList(msg, head):

@@ -1,3 +1,5 @@
+# https://www.techiedelight.com/pop-operation-in-linked-list/
+
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data

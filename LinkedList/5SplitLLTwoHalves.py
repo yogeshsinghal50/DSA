@@ -1,3 +1,5 @@
+# https://www.techiedelight.com/split-nodes-given-linked-list-front-back-halves/
+
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data
